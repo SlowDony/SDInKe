@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3EA10E1DAEC55E733A38E1F /* libPods-SDInKe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D7D98FB5541DEED608266A /* libPods-SDInKe.a */; };
 		EF83DD9D1FFBD35F00B9FA0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF83DD9B1FFBD35F00B9FA0C /* Main.storyboard */; };
 		EF83DD9F1FFBD35F00B9FA0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF83DD9E1FFBD35F00B9FA0C /* Assets.xcassets */; };
 		EF83DDA21FFBD35F00B9FA0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF83DDA01FFBD35F00B9FA0C /* LaunchScreen.storyboard */; };
@@ -36,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		97F05CAF0A3863A2093418FE /* Pods-SDInKe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDInKe.release.xcconfig"; path = "Pods/Target Support Files/Pods-SDInKe/Pods-SDInKe.release.xcconfig"; sourceTree = "<group>"; };
+		A6D7D98FB5541DEED608266A /* libPods-SDInKe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SDInKe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C56E55065FCB540FD8FFD509 /* Pods-SDInKe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDInKe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SDInKe/Pods-SDInKe.debug.xcconfig"; sourceTree = "<group>"; };
 		EF83DD921FFBD35F00B9FA0C /* SDInKe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDInKe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF83DD9C1FFBD35F00B9FA0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF83DD9E1FFBD35F00B9FA0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3EA10E1DAEC55E733A38E1F /* libPods-SDInKe.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +84,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D433551662E7E5C5807F3A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6D7D98FB5541DEED608266A /* libPods-SDInKe.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9979AF1CC371DFFA37841B4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C56E55065FCB540FD8FFD509 /* Pods-SDInKe.debug.xcconfig */,
+				97F05CAF0A3863A2093418FE /* Pods-SDInKe.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EF83DD891FFBD35F00B9FA0C = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +108,8 @@
 				EF83DDAD1FFBD36000B9FA0C /* SDInKeTests */,
 				EF83DDB81FFBD36000B9FA0C /* SDInKeUITests */,
 				EF83DD931FFBD35F00B9FA0C /* Products */,
+				9979AF1CC371DFFA37841B4B /* Pods */,
+				4D433551662E7E5C5807F3A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -212,9 +236,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF83DDBE1FFBD36000B9FA0C /* Build configuration list for PBXNativeTarget "SDInKe" */;
 			buildPhases = (
+				544F9A8955A3B8D21B3B81E0 /* [CP] Check Pods Manifest.lock */,
 				EF83DD8E1FFBD35F00B9FA0C /* Sources */,
 				EF83DD8F1FFBD35F00B9FA0C /* Frameworks */,
 				EF83DD901FFBD35F00B9FA0C /* Resources */,
+				B4C84396103647DAD3D2D971 /* [CP] Embed Pods Frameworks */,
+				493991B9695E345D5F12C426 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -333,6 +360,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		493991B9695E345D5F12C426 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SDInKe/Pods-SDInKe-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SDInKe/Pods-SDInKe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		544F9A8955A3B8D21B3B81E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SDInKe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4C84396103647DAD3D2D971 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SDInKe/Pods-SDInKe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EF83DD8E1FFBD35F00B9FA0C /* Sources */ = {
@@ -502,6 +583,7 @@
 		};
 		EF83DDBF1FFBD36000B9FA0C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C56E55065FCB540FD8FFD509 /* Pods-SDInKe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -515,6 +597,7 @@
 		};
 		EF83DDC01FFBD36000B9FA0C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97F05CAF0A3863A2093418FE /* Pods-SDInKe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
