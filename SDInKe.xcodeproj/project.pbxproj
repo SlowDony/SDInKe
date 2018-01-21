@@ -40,6 +40,8 @@
 		97F05CAF0A3863A2093418FE /* Pods-SDInKe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDInKe.release.xcconfig"; path = "Pods/Target Support Files/Pods-SDInKe/Pods-SDInKe.release.xcconfig"; sourceTree = "<group>"; };
 		A6D7D98FB5541DEED608266A /* libPods-SDInKe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SDInKe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C56E55065FCB540FD8FFD509 /* Pods-SDInKe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDInKe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SDInKe/Pods-SDInKe.debug.xcconfig"; sourceTree = "<group>"; };
+		EF3DE5652006485C00A52ACE /* SDInke.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDInke.pch; sourceTree = "<group>"; };
+		EF3DE566200648AC00A52ACE /* SDMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDMacros.h; sourceTree = "<group>"; };
 		EF83DD921FFBD35F00B9FA0C /* SDInKe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDInKe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF83DD9C1FFBD35F00B9FA0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF83DD9E1FFBD35F00B9FA0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -218,6 +220,8 @@
 				EF83DDD01FFBD49F00B9FA0C /* AppDelegate.m */,
 				EF83DDD31FFBD49F00B9FA0C /* ViewController.h */,
 				EF83DDD41FFBD49F00B9FA0C /* ViewController.m */,
+				EF3DE566200648AC00A52ACE /* SDMacros.h */,
+				EF3DE5652006485C00A52ACE /* SDInke.pch */,
 			);
 			path = Other;
 			sourceTree = "<group>";
