@@ -17,6 +17,12 @@
 		EF83DDD91FFBD4A000B9FA0C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF83DDD41FFBD49F00B9FA0C /* ViewController.m */; };
 		EF83DDDC1FFBD50800B9FA0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF83DDDA1FFBD50700B9FA0C /* main.m */; };
 		EF83DDDD1FFBD50800B9FA0C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF83DDDB1FFBD50800B9FA0C /* Info.plist */; };
+		EFEAE23C2018E0C20030427A /* SDTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFEAE23B2018E0C20030427A /* SDTabBarViewController.m */; };
+		EFEAE23F2018E0E00030427A /* SDTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EFEAE23E2018E0E00030427A /* SDTabBar.m */; };
+		EFEAE2422018F0530030427A /* SDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFEAE2412018F0530030427A /* SDBaseViewController.m */; };
+		EFEAE24D2018F0F20030427A /* SDShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFEAE24C2018F0F20030427A /* SDShowViewController.m */; };
+		EFEAE2502018F1070030427A /* SDMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFEAE24F2018F1070030427A /* SDMeViewController.m */; };
+		EFEAE2532018F1D40030427A /* SDBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFEAE2522018F1D40030427A /* SDBaseNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +64,18 @@
 		EF83DDD41FFBD49F00B9FA0C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EF83DDDA1FFBD50700B9FA0C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EF83DDDB1FFBD50800B9FA0C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFEAE23A2018E0C20030427A /* SDTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDTabBarViewController.h; sourceTree = "<group>"; };
+		EFEAE23B2018E0C20030427A /* SDTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTabBarViewController.m; sourceTree = "<group>"; };
+		EFEAE23D2018E0E00030427A /* SDTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDTabBar.h; sourceTree = "<group>"; };
+		EFEAE23E2018E0E00030427A /* SDTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDTabBar.m; sourceTree = "<group>"; };
+		EFEAE2402018F0530030427A /* SDBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDBaseViewController.h; sourceTree = "<group>"; };
+		EFEAE2412018F0530030427A /* SDBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDBaseViewController.m; sourceTree = "<group>"; };
+		EFEAE24B2018F0F20030427A /* SDShowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDShowViewController.h; sourceTree = "<group>"; };
+		EFEAE24C2018F0F20030427A /* SDShowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDShowViewController.m; sourceTree = "<group>"; };
+		EFEAE24E2018F1070030427A /* SDMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDMeViewController.h; sourceTree = "<group>"; };
+		EFEAE24F2018F1070030427A /* SDMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDMeViewController.m; sourceTree = "<group>"; };
+		EFEAE2512018F1D40030427A /* SDBaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDBaseNavigationController.h; sourceTree = "<group>"; };
+		EFEAE2522018F1D40030427A /* SDBaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDBaseNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +192,14 @@
 		EF83DDC81FFBD49F00B9FA0C /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				EFEAE23A2018E0C20030427A /* SDTabBarViewController.h */,
+				EFEAE23B2018E0C20030427A /* SDTabBarViewController.m */,
+				EFEAE23D2018E0E00030427A /* SDTabBar.h */,
+				EFEAE23E2018E0E00030427A /* SDTabBar.m */,
+				EFEAE2402018F0530030427A /* SDBaseViewController.h */,
+				EFEAE2412018F0530030427A /* SDBaseViewController.m */,
+				EFEAE2512018F1D40030427A /* SDBaseNavigationController.h */,
+				EFEAE2522018F1D40030427A /* SDBaseNavigationController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -202,6 +228,10 @@
 		EF83DDCC1FFBD49F00B9FA0C /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				EFEAE2482018F0D70030427A /* Controller */,
+				EFEAE2472018F0D70030427A /* Model */,
+				EFEAE24A2018F0D80030427A /* Tool */,
+				EFEAE2492018F0D70030427A /* View */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -229,8 +259,72 @@
 		EF83DDD51FFBD49F00B9FA0C /* Show */ = {
 			isa = PBXGroup;
 			children = (
+				EFEAE2442018F0CC0030427A /* Controller */,
+				EFEAE2432018F0CC0030427A /* Model */,
+				EFEAE2452018F0CC0030427A /* Tool */,
+				EFEAE2462018F0CC0030427A /* View */,
 			);
 			path = Show;
+			sourceTree = "<group>";
+		};
+		EFEAE2432018F0CC0030427A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EFEAE2442018F0CC0030427A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EFEAE24B2018F0F20030427A /* SDShowViewController.h */,
+				EFEAE24C2018F0F20030427A /* SDShowViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EFEAE2452018F0CC0030427A /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		EFEAE2462018F0CC0030427A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EFEAE2472018F0D70030427A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EFEAE2482018F0D70030427A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EFEAE24E2018F1070030427A /* SDMeViewController.h */,
+				EFEAE24F2018F1070030427A /* SDMeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EFEAE2492018F0D70030427A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EFEAE24A2018F0D80030427A /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,8 +520,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF83DDD91FFBD4A000B9FA0C /* ViewController.m in Sources */,
+				EFEAE23C2018E0C20030427A /* SDTabBarViewController.m in Sources */,
 				EF83DDDC1FFBD50800B9FA0C /* main.m in Sources */,
 				EF83DDD61FFBD4A000B9FA0C /* AppDelegate.m in Sources */,
+				EFEAE2422018F0530030427A /* SDBaseViewController.m in Sources */,
+				EFEAE23F2018E0E00030427A /* SDTabBar.m in Sources */,
+				EFEAE24D2018F0F20030427A /* SDShowViewController.m in Sources */,
+				EFEAE2502018F1070030427A /* SDMeViewController.m in Sources */,
+				EFEAE2532018F1D40030427A /* SDBaseNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +620,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SDInKe/Class/Other/SDInke.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -573,6 +674,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SDInKe/Class/Other/SDInke.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
