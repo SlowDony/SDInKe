@@ -14,9 +14,29 @@
  */
 @property (nonatomic,strong)  UIImageView *tabBarBJView;
 @property (nonatomic,strong)  NSMutableArray *itemArr;
+
+/**
+ 直播按钮
+ */
+@property (nonatomic,strong)  UIButton *cameraBtn;
+
+/**
+ 最后选择的按钮
+ */
+@property (nonatomic,strong)  UIButton *lastSeletcBtn;
 @end
 @implementation SDTabBar
 
+#pragma mark - lazy
+- (UIButton *)cameraBtn{
+    if (!_cameraBtn){
+        //
+        _cameraBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_cameraBtn setImage:[UIImage imageNamed:@"tab_launch"] forState:UIControlStateNormal];
+        [_cameraBtn  addTarget:self action:@selector(itemBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _cameraBtn;
+}
 -(NSMutableArray *)itemArr{
     if (!_itemArr){
         NSArray *arr = @[@"tab_live",@"tab_me"];
@@ -45,17 +65,36 @@
         //
         UIButton *itemBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [itemBtn setImage:[UIImage imageNamed:self.itemArr[i]] forState:UIControlStateNormal];
-        [itemBtn setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@_p",self.itemArr[i]]] forState:UIControlStateNormal];
+        itemBtn.adjustsImageWhenHighlighted = NO  ;
+        [itemBtn setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@_p",self.itemArr[i]]] forState:UIControlStateSelected];
         [itemBtn  addTarget:self action:@selector(itemBtnClick:) forControlEvents:UIControlEventTouchUpInside];
         itemBtn.tag = TabBarTypeMe+i;
+        if (i==0){
+            itemBtn.selected = YES;
+            self.lastSeletcBtn = itemBtn;
+        }
         [self addSubview: itemBtn];
     }
+    [self addSubview:self.cameraBtn];
 }
 
 - (void)itemBtnClick:(UIButton *)sender{
+    
     if ([self.delegate respondsToSelector:@selector(tabbar:withBtn:)]){
         [self.delegate tabbar:self withBtn:sender.tag];
     }
+    self.lastSeletcBtn.selected = NO;
+    sender.selected = YES;
+    self.lastSeletcBtn = sender;
+    
+    [UIView animateWithDuration:0.2 animations:^{
+        sender.transform = CGAffineTransformMakeScale(1.2, 1.2);
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:0.2 animations:^{
+            sender.transform = CGAffineTransformIdentity;
+        }];
+    }];
+    
 }
 
 - (void)layoutSubviews{
@@ -75,6 +114,8 @@
             btn.frame = CGRectMake(btnX, btnY, btnW,btnH);
         }
     }
+    self.cameraBtn ne
+    self.cameraBtn.center = CGPointMake(self.frame.size.width/2, self.frame.size.height/2);
 }
 
 @end
