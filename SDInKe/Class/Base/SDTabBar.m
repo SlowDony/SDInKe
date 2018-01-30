@@ -34,6 +34,7 @@
         _cameraBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_cameraBtn setImage:[UIImage imageNamed:@"tab_launch"] forState:UIControlStateNormal];
         [_cameraBtn  addTarget:self action:@selector(itemBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+        _cameraBtn.tag = TabBarTypeLaunch;
     }
     return _cameraBtn;
 }
@@ -83,17 +84,21 @@
     if ([self.delegate respondsToSelector:@selector(tabbar:withBtn:)]){
         [self.delegate tabbar:self withBtn:sender.tag];
     }
-    self.lastSeletcBtn.selected = NO;
-    sender.selected = YES;
-    self.lastSeletcBtn = sender;
-    
-    [UIView animateWithDuration:0.2 animations:^{
-        sender.transform = CGAffineTransformMakeScale(1.2, 1.2);
-    } completion:^(BOOL finished) {
+    if (sender.tag != TabBarTypeLaunch){
+        self.lastSeletcBtn.selected = NO;
+        sender.selected = YES;
+        self.lastSeletcBtn = sender;
+        
         [UIView animateWithDuration:0.2 animations:^{
-            sender.transform = CGAffineTransformIdentity;
+            sender.transform = CGAffineTransformMakeScale(1.2, 1.2);
+        } completion:^(BOOL finished) {
+            [UIView animateWithDuration:0.2 animations:^{
+                sender.transform = CGAffineTransformIdentity;
+            }];
         }];
-    }];
+    }
+    
+    
     
 }
 
@@ -114,8 +119,8 @@
             btn.frame = CGRectMake(btnX, btnY, btnW,btnH);
         }
     }
-    self.cameraBtn ne
-    self.cameraBtn.center = CGPointMake(self.frame.size.width/2, self.frame.size.height/2);
+    [self.cameraBtn sizeToFit];
+    self.cameraBtn.center = CGPointMake(self.bounds.size.width/2, self.bounds.size.height-50);
 }
 
 @end

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSInteger ,TabBarType){
-    TabBarTypeLaunch , //
+    TabBarTypeLaunch , //拍摄直播
     TabBarTypeMe , //我的
     TabBarTypeLive //直播
 };

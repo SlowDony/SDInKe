@@ -9,6 +9,8 @@
 #import "SDTabBarViewController.h"
 #import "SDTabBar.h"
 #import "SDBaseNavigationController.h"
+#import "SDLiveViewController.h"
+
 @interface SDTabBarViewController ()
 <SDTabBarDelegate>
 
@@ -21,15 +23,18 @@
 #pragma mark - lazy
 - (SDTabBar *)tabbar{
     if (!_tabbar){
-        _tabbar = [[SDTabBar alloc]initWithFrame:CGRectMake(0, SCREEN_HEIGHT-49,SCREEN_WIDTH , 49)];
+        _tabbar = [[SDTabBar alloc]initWithFrame:CGRectMake(0, 0,SCREEN_WIDTH , 49)];
         _tabbar.delegate = self;
     }
     return _tabbar;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [self setupViewControllers];
-    [self.view addSubview:self.tabbar];
+    [self.tabBar addSubview:self.tabbar];
+    [[UITabBar appearance]setShadowImage:[UIImage new]];
+    [[UITabBar appearance]setBackgroundImage:[UIImage new]];
     // Do any additional setup after loading the view.
 }
 
@@ -38,7 +43,7 @@
     // Dispose of any resources that can be recreated.
 }
 - (void)setupViewControllers{
-    NSMutableArray *arr = [NSMutableArray arrayWithArray:@[@"SDMeViewController",@"SDShowViewController"]];
+    NSMutableArray *arr = [NSMutableArray arrayWithArray:@[@"SDShowViewController",@"SDMeViewController",]];
     for (int i = 0 ; i<arr.count; i++) {
         NSString *vcName = arr[i];
         UIViewController *vc = [[NSClassFromString(vcName) alloc]init];
@@ -51,6 +56,13 @@
 #pragma mark - SDTabBarDelegate
 - (void)tabbar:(SDTabBar *)tabbar withBtn:(TabBarType)tabbarType{
     
+    if (tabbarType !=TabBarTypeLaunch) {
+        self.selectedIndex = tabbarType-TabBarTypeMe;
+        return ;
+    }
+
+    SDLiveViewController *vc = [[SDLiveViewController alloc]init];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 /*
 #pragma mark - Navigation
