@@ -1,14 +1,14 @@
+
 //
 //  SDLiveViewController.m
 //  SDInKe
 //
-//  Created by slowdony on 2018/1/27.
+//  Created by slowdony on 2018/1/30.
 //  Copyright © 2018年 slowdony. All rights reserved.
 //
 
 #import "SDLiveViewController.h"
-
-/**
+/*
  直播
  */
 @interface SDLiveViewController ()
@@ -20,9 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupUI];
+
     // Do any additional setup after loading the view.
 }
-
 - (void)setupUI{
     
     UIImageView *imageView = [[UIImageView alloc] init];
@@ -38,11 +38,11 @@
     [self.view addSubview: backBtn];
     
 }
-
 #pragma mark - action
 - (void)backBtn:(UIButton *)btn{
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

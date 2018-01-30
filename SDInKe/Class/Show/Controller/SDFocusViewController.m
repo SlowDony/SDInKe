@@ -1,22 +1,22 @@
 //
-//  SDMeViewController.m
+//  SDFocusViewController.m
 //  SDInKe
 //
-//  Created by slowdony on 2018/1/25.
+//  Created by slowdony on 2018/1/30.
 //  Copyright © 2018年 slowdony. All rights reserved.
 //
 
-#import "SDMeViewController.h"
-
-@interface SDMeViewController ()
+#import "SDFocusViewController.h"
+//关注
+@interface SDFocusViewController ()
 
 @end
 
-@implementation SDMeViewController
+@implementation SDFocusViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   self.navigationItem.title = @"我的";
+    self.view.backgroundColor = [UIColor orangeColor];
     // Do any additional setup after loading the view.
 }
 

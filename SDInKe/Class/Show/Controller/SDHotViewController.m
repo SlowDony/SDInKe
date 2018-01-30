@@ -1,22 +1,22 @@
 //
-//  SDMeViewController.m
+//  SDHotViewController.m
 //  SDInKe
 //
-//  Created by slowdony on 2018/1/25.
+//  Created by slowdony on 2018/1/30.
 //  Copyright © 2018年 slowdony. All rights reserved.
 //
 
-#import "SDMeViewController.h"
-
-@interface SDMeViewController ()
+#import "SDHotViewController.h"
+//热点
+@interface SDHotViewController ()
 
 @end
 
-@implementation SDMeViewController
+@implementation SDHotViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   self.navigationItem.title = @"我的";
+    self.view.backgroundColor = [UIColor blueColor];
     // Do any additional setup after loading the view.
 }
 

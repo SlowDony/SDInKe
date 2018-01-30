@@ -10,7 +10,6 @@
 #import "SDTabBar.h"
 #import "SDBaseNavigationController.h"
 #import "SDLiveViewController.h"
-
 @interface SDTabBarViewController ()
 <SDTabBarDelegate>
 
@@ -30,11 +29,11 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     [self setupViewControllers];
-    [self.tabBar addSubview:self.tabbar];
+    [self.tabBar  addSubview:self.tabbar];
     [[UITabBar appearance]setShadowImage:[UIImage new]];
     [[UITabBar appearance]setBackgroundImage:[UIImage new]];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -43,7 +42,7 @@
     // Dispose of any resources that can be recreated.
 }
 - (void)setupViewControllers{
-    NSMutableArray *arr = [NSMutableArray arrayWithArray:@[@"SDShowViewController",@"SDMeViewController",]];
+    NSMutableArray *arr = [NSMutableArray arrayWithArray:@[@"SDShowViewController",@"SDMeViewController"]];
     for (int i = 0 ; i<arr.count; i++) {
         NSString *vcName = arr[i];
         UIViewController *vc = [[NSClassFromString(vcName) alloc]init];
@@ -55,14 +54,14 @@
 
 #pragma mark - SDTabBarDelegate
 - (void)tabbar:(SDTabBar *)tabbar withBtn:(TabBarType)tabbarType{
-    
-    if (tabbarType !=TabBarTypeLaunch) {
+    if (tabbarType !=TabBarTypeLaunch){
         self.selectedIndex = tabbarType-TabBarTypeMe;
-        return ;
+        return;
     }
-
-    SDLiveViewController *vc = [[SDLiveViewController alloc]init];
-    [self presentViewController:vc animated:YES completion:nil];
+    
+    SDLiveViewController *liveVC = [[SDLiveViewController alloc]init];
+    [self presentViewController:liveVC animated:YES completion:nil];
+    
 }
 /*
 #pragma mark - Navigation

@@ -84,7 +84,7 @@
     if ([self.delegate respondsToSelector:@selector(tabbar:withBtn:)]){
         [self.delegate tabbar:self withBtn:sender.tag];
     }
-    if (sender.tag != TabBarTypeLaunch){
+    if (sender.tag != TabBarTypeLaunch) {
         self.lastSeletcBtn.selected = NO;
         sender.selected = YES;
         self.lastSeletcBtn = sender;
@@ -97,8 +97,7 @@
             }];
         }];
     }
-    
-    
+   
     
 }
 
@@ -120,7 +119,7 @@
         }
     }
     [self.cameraBtn sizeToFit];
-    self.cameraBtn.center = CGPointMake(self.bounds.size.width/2, self.bounds.size.height-50);
+    self.cameraBtn.center = CGPointMake(self.frame.size.width/2, self.frame.size.height-50);
 }
 
 @end

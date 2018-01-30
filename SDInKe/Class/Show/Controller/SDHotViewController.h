@@ -1,5 +1,5 @@
 //
-//  SDLiveViewController.h
+//  SDHotViewController.h
 //  SDInKe
 //
 //  Created by slowdony on 2018/1/30.
@@ -8,6 +8,6 @@
 
 #import "SDBaseViewController.h"
 
-@interface SDLiveViewController : SDBaseViewController
+@interface SDHotViewController : SDBaseViewController
 
 @end
