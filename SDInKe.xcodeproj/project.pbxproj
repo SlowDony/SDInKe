@@ -17,6 +17,15 @@
 		EF83DDD91FFBD4A000B9FA0C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF83DDD41FFBD49F00B9FA0C /* ViewController.m */; };
 		EF83DDDC1FFBD50800B9FA0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF83DDDA1FFBD50700B9FA0C /* main.m */; };
 		EF83DDDD1FFBD50800B9FA0C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF83DDDB1FFBD50800B9FA0C /* Info.plist */; };
+		EFA964E42082435A00096E83 /* SDHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA964E32082435A00096E83 /* SDHttpTool.m */; };
+		EFA964E72082447600096E83 /* SDBaseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA964E62082447600096E83 /* SDBaseHandler.m */; };
+		EFA964EA2082482300096E83 /* SDHotLiveHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA964E92082482300096E83 /* SDHotLiveHandle.m */; };
+		EFA964ED208255A500096E83 /* SDHotLiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA964EC208255A500096E83 /* SDHotLiveModel.m */; };
+		EFA964F02082574700096E83 /* SDLiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA964EF2082574700096E83 /* SDLiveModel.m */; };
+		EFA964F32082576400096E83 /* SDActInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA964F12082576400096E83 /* SDActInfoModel.m */; };
+		EFA964F82082579900096E83 /* SDCreatorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA964F42082579900096E83 /* SDCreatorModel.m */; };
+		EFA964F92082579900096E83 /* SDExtraModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA964F72082579900096E83 /* SDExtraModel.m */; };
+		EFA964FC2083B43800096E83 /* MJExtensionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA964FB2083B43800096E83 /* MJExtensionConfig.m */; };
 		EFCAE5512020B38E00B69B98 /* SDLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCAE5502020B38E00B69B98 /* SDLiveViewController.m */; };
 		EFCAE5542020C7E200B69B98 /* SDFocusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCAE5532020C7E200B69B98 /* SDFocusViewController.m */; };
 		EFCAE5572020C7FD00B69B98 /* SDHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCAE5562020C7FD00B69B98 /* SDHotViewController.m */; };
@@ -71,6 +80,25 @@
 		EF83DDD41FFBD49F00B9FA0C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EF83DDDA1FFBD50700B9FA0C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EF83DDDB1FFBD50800B9FA0C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFA964E12082237900096E83 /* APIConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIConfig.h; sourceTree = "<group>"; };
+		EFA964E22082435A00096E83 /* SDHttpTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDHttpTool.h; sourceTree = "<group>"; };
+		EFA964E32082435A00096E83 /* SDHttpTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDHttpTool.m; sourceTree = "<group>"; };
+		EFA964E52082447600096E83 /* SDBaseHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDBaseHandler.h; sourceTree = "<group>"; };
+		EFA964E62082447600096E83 /* SDBaseHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDBaseHandler.m; sourceTree = "<group>"; };
+		EFA964E82082482300096E83 /* SDHotLiveHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDHotLiveHandle.h; sourceTree = "<group>"; };
+		EFA964E92082482300096E83 /* SDHotLiveHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDHotLiveHandle.m; sourceTree = "<group>"; };
+		EFA964EB208255A500096E83 /* SDHotLiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDHotLiveModel.h; sourceTree = "<group>"; };
+		EFA964EC208255A500096E83 /* SDHotLiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDHotLiveModel.m; sourceTree = "<group>"; };
+		EFA964EE2082574700096E83 /* SDLiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLiveModel.h; sourceTree = "<group>"; };
+		EFA964EF2082574700096E83 /* SDLiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDLiveModel.m; sourceTree = "<group>"; };
+		EFA964F12082576400096E83 /* SDActInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDActInfoModel.m; sourceTree = "<group>"; };
+		EFA964F22082576400096E83 /* SDActInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDActInfoModel.h; sourceTree = "<group>"; };
+		EFA964F42082579900096E83 /* SDCreatorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCreatorModel.m; sourceTree = "<group>"; };
+		EFA964F52082579900096E83 /* SDExtraModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDExtraModel.h; sourceTree = "<group>"; };
+		EFA964F62082579900096E83 /* SDCreatorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCreatorModel.h; sourceTree = "<group>"; };
+		EFA964F72082579900096E83 /* SDExtraModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDExtraModel.m; sourceTree = "<group>"; };
+		EFA964FA2083B43800096E83 /* MJExtensionConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConfig.h; sourceTree = "<group>"; };
+		EFA964FB2083B43800096E83 /* MJExtensionConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConfig.m; sourceTree = "<group>"; };
 		EFCAE54F2020B38E00B69B98 /* SDLiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDLiveViewController.h; sourceTree = "<group>"; };
 		EFCAE5502020B38E00B69B98 /* SDLiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDLiveViewController.m; sourceTree = "<group>"; };
 		EFCAE5522020C7E200B69B98 /* SDFocusViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDFocusViewController.h; sourceTree = "<group>"; };
@@ -221,6 +249,8 @@
 				EFCAE55F2020CA6500B69B98 /* SDBaseViewController.m */,
 				EFEAE23D2018E0E00030427A /* SDTabBar.h */,
 				EFEAE23E2018E0E00030427A /* SDTabBar.m */,
+				EFA964E52082447600096E83 /* SDBaseHandler.h */,
+				EFA964E62082447600096E83 /* SDBaseHandler.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -267,6 +297,9 @@
 		EF83DDCD1FFBD49F00B9FA0C /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
+				EFA964E12082237900096E83 /* APIConfig.h */,
+				EFA964E22082435A00096E83 /* SDHttpTool.h */,
+				EFA964E32082435A00096E83 /* SDHttpTool.m */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -280,6 +313,8 @@
 				EF83DDD41FFBD49F00B9FA0C /* ViewController.m */,
 				EF3DE566200648AC00A52ACE /* SDMacros.h */,
 				EF3DE5652006485C00A52ACE /* SDInke.pch */,
+				EFA964FA2083B43800096E83 /* MJExtensionConfig.h */,
+				EFA964FB2083B43800096E83 /* MJExtensionConfig.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -337,6 +372,16 @@
 		EFEAE2432018F0CC0030427A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EFA964F62082579900096E83 /* SDCreatorModel.h */,
+				EFA964F42082579900096E83 /* SDCreatorModel.m */,
+				EFA964F52082579900096E83 /* SDExtraModel.h */,
+				EFA964F72082579900096E83 /* SDExtraModel.m */,
+				EFA964F22082576400096E83 /* SDActInfoModel.h */,
+				EFA964F12082576400096E83 /* SDActInfoModel.m */,
+				EFA964EE2082574700096E83 /* SDLiveModel.h */,
+				EFA964EF2082574700096E83 /* SDLiveModel.m */,
+				EFA964EB208255A500096E83 /* SDHotLiveModel.h */,
+				EFA964EC208255A500096E83 /* SDHotLiveModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -359,6 +404,8 @@
 		EFEAE2452018F0CC0030427A /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				EFA964E82082482300096E83 /* SDHotLiveHandle.h */,
+				EFA964E92082482300096E83 /* SDHotLiveHandle.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -594,21 +641,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFA964EA2082482300096E83 /* SDHotLiveHandle.m in Sources */,
 				EF83DDD91FFBD4A000B9FA0C /* ViewController.m in Sources */,
 				EFEAE23C2018E0C20030427A /* SDTabBarViewController.m in Sources */,
 				EF83DDDC1FFBD50800B9FA0C /* main.m in Sources */,
 				EFCAE55D2020CA4200B69B98 /* SDBaseNavigationController.m in Sources */,
 				EF83DDD61FFBD4A000B9FA0C /* AppDelegate.m in Sources */,
 				EFCAE5672020CF9600B69B98 /* SDHelper.m in Sources */,
+				EFA964E72082447600096E83 /* SDBaseHandler.m in Sources */,
+				EFA964F02082574700096E83 /* SDLiveModel.m in Sources */,
+				EFA964F82082579900096E83 /* SDCreatorModel.m in Sources */,
 				EFEAE23F2018E0E00030427A /* SDTabBar.m in Sources */,
 				EFCAE5542020C7E200B69B98 /* SDFocusViewController.m in Sources */,
 				EFEAE24D2018F0F20030427A /* SDShowViewController.m in Sources */,
+				EFA964F92082579900096E83 /* SDExtraModel.m in Sources */,
 				EFCAE5642020CE3400B69B98 /* UIBarButtonItem+Extension.m in Sources */,
+				EFA964E42082435A00096E83 /* SDHttpTool.m in Sources */,
 				EFCAE5512020B38E00B69B98 /* SDLiveViewController.m in Sources */,
 				EFCAE55A2020C93B00B69B98 /* SDNearViewController.m in Sources */,
 				EFCAE5602020CA6500B69B98 /* SDBaseViewController.m in Sources */,
 				EFCAE5572020C7FD00B69B98 /* SDHotViewController.m in Sources */,
 				EFCAE56D2020D1DD00B69B98 /* SDShowTopView.m in Sources */,
+				EFA964F32082576400096E83 /* SDActInfoModel.m in Sources */,
+				EFA964ED208255A500096E83 /* SDHotLiveModel.m in Sources */,
+				EFA964FC2083B43800096E83 /* MJExtensionConfig.m in Sources */,
 				EFEAE2502018F1070030427A /* SDMeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

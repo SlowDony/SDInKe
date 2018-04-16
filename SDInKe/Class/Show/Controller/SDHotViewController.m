@@ -7,6 +7,8 @@
 //
 
 #import "SDHotViewController.h"
+#import "SDHotLiveHandle.h"
+
 //热点
 @interface SDHotViewController ()
 
@@ -17,9 +19,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blueColor];
+    [self setnetWork];
     // Do any additional setup after loading the view.
 }
 
+- (void)setnetWork{
+    [SDHotLiveHandle getHotLiveTaskSuccess:^(id obj) {
+        NSArray *arr = (NSArray *)obj;
+        DLog(@"%@",arr);
+    } failed:^(id obj) {
+        DLog(@"error:%@",obj);
+    }];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
