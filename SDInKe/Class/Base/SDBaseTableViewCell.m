@@ -10,15 +10,25 @@
 
 @implementation SDBaseTableViewCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
++(instancetype)cellWithTableView:(UITableView *)tableView{
+   static NSString *cellId = @"SDBaseTableViewCell";
+   SDBaseTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    if (cell == nil) {
+        
+        cell =[[SDBaseTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+    }
+    
+    return cell;
 }
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+-(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+    self =[super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if ( self) {
+        [self setupUI];
+    }
+    return self;
+}
+-(void)setupUI{
+    
 }
 
 @end

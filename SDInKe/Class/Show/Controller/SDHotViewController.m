@@ -8,18 +8,34 @@
 
 #import "SDHotViewController.h"
 #import "SDHotLiveHandle.h"
-
+#import "SDLiveTableView.h"
+#import "SDLiveModel.h"
 //热点
 @interface SDHotViewController ()
 
+@property (nonatomic,strong)  SDLiveTableView *tableView;
+@property (nonatomic,strong) NSMutableArray *dataArr;
 @end
 
 @implementation SDHotViewController
 
+#pragma mark - lazy
+-(SDLiveTableView *)tableView{
+    if(!_tableView){
+        _tableView = [[SDLiveTableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    }
+    return _tableView;
+}
+-(NSMutableArray *)dataArr{
+    if(!_dataArr){
+        _dataArr = [NSMutableArray array];
+    }
+    return _dataArr;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor blueColor];
     [self setnetWork];
+    [self.view addSubview:self.tableView];
     // Do any additional setup after loading the view.
 }
 
@@ -27,6 +43,9 @@
     [SDHotLiveHandle getHotLiveTaskSuccess:^(id obj) {
         NSArray *arr = (NSArray *)obj;
         DLog(@"%@",arr);
+        self.dataArr = [NSMutableArray arrayWithArray:arr];
+        self.tableView.dataArray = self.dataArr;
+        [self.tableView reloadData];
     } failed:^(id obj) {
         DLog(@"error:%@",obj);
     }];

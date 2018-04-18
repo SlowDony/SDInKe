@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SDBaseTableView : UITableView
+@protocol SDBaseTableViewDelegate <NSObject>
+
+- (void)tableView:(id)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
+@end
+@interface SDBaseTableView : UITableView<UITableViewDataSource,UITableViewDelegate>
+
+///通用数据源
+@property(nonatomic, strong)NSMutableArray *dataArray;
+
+///代理
+@property(nonatomic, weak)id <SDBaseTableViewDelegate> baseDelegate;
+
 
 @end

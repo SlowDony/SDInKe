@@ -9,5 +9,6 @@
 #import "SDBaseTableView.h"
 
 @interface SDLiveTableView : SDBaseTableView
+<SDBaseTableViewDelegate>
 
 @end

@@ -18,7 +18,9 @@
             failed(json[@"error_msg"]);
         }else{
          NSArray *lives =   [SDLiveModel mj_objectArrayWithKeyValuesArray:json[@"lives"]];
+         DLog(@"json:%@",[json mj_JSONString]);
            success(lives);
+            
         }
        
     } failure:^(NSError *error) {
