@@ -35,6 +35,9 @@
 		EFCAE5642020CE3400B69B98 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCAE5622020CE3400B69B98 /* UIBarButtonItem+Extension.m */; };
 		EFCAE5672020CF9600B69B98 /* SDHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCAE5662020CF9600B69B98 /* SDHelper.m */; };
 		EFCAE56D2020D1DD00B69B98 /* SDShowTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCAE56C2020D1DD00B69B98 /* SDShowTopView.m */; };
+		EFCBBCD0208B22BD00257563 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFCBBCCF208B22AF00257563 /* AudioToolbox.framework */; };
+		EFCBBCD6208B236200257563 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EFCBBCD5208B236200257563 /* libbz2.tbd */; };
+		EFCBBCD8208B236C00257563 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EFCBBCD7208B236C00257563 /* libz.tbd */; };
 		EFEAE23C2018E0C20030427A /* SDTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFEAE23B2018E0C20030427A /* SDTabBarViewController.m */; };
 		EFEAE23F2018E0E00030427A /* SDTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EFEAE23E2018E0E00030427A /* SDTabBar.m */; };
 		EFEAE24D2018F0F20030427A /* SDShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFEAE24C2018F0F20030427A /* SDShowViewController.m */; };
@@ -121,6 +124,18 @@
 		EFCAE5662020CF9600B69B98 /* SDHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDHelper.m; sourceTree = "<group>"; };
 		EFCAE56B2020D1DD00B69B98 /* SDShowTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDShowTopView.h; sourceTree = "<group>"; };
 		EFCAE56C2020D1DD00B69B98 /* SDShowTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDShowTopView.m; sourceTree = "<group>"; };
+		EFCBBCCF208B22AF00257563 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EFCBBCD1208B230700257563 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EFCBBCD2208B232B00257563 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EFCBBCD3208B233C00257563 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		EFCBBCD4208B235400257563 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		EFCBBCD5208B236200257563 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		EFCBBCD7208B236C00257563 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		EFCBBCD9208B237A00257563 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		EFCBBCDA208B238500257563 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		EFCBBCDB208B238F00257563 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		EFCBBCDC208B239D00257563 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EFCBBCDD208B23A900257563 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		EFEAE23A2018E0C20030427A /* SDTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDTabBarViewController.h; sourceTree = "<group>"; };
 		EFEAE23B2018E0C20030427A /* SDTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTabBarViewController.m; sourceTree = "<group>"; };
 		EFEAE23D2018E0E00030427A /* SDTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDTabBar.h; sourceTree = "<group>"; };
@@ -144,6 +159,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFCBBCD6208B236200257563 /* libbz2.tbd in Frameworks */,
+				EFCBBCD8208B236C00257563 /* libz.tbd in Frameworks */,
+				EFCBBCD0208B22BD00257563 /* AudioToolbox.framework in Frameworks */,
 				A3EA10E1DAEC55E733A38E1F /* libPods-SDInKe.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,6 +186,18 @@
 		4D433551662E7E5C5807F3A1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EFCBBCDD208B23A900257563 /* VideoToolbox.framework */,
+				EFCBBCDC208B239D00257563 /* QuartzCore.framework */,
+				EFCBBCDB208B238F00257563 /* OpenGLES.framework */,
+				EFCBBCDA208B238500257563 /* MobileCoreServices.framework */,
+				EFCBBCD9208B237A00257563 /* MediaPlayer.framework */,
+				EFCBBCD7208B236C00257563 /* libz.tbd */,
+				EFCBBCD5208B236200257563 /* libbz2.tbd */,
+				EFCBBCD4208B235400257563 /* CoreVideo.framework */,
+				EFCBBCD3208B233C00257563 /* CoreMedia.framework */,
+				EFCBBCD2208B232B00257563 /* CoreGraphics.framework */,
+				EFCBBCD1208B230700257563 /* AVFoundation.framework */,
+				EFCBBCCF208B22AF00257563 /* AudioToolbox.framework */,
 				A6D7D98FB5541DEED608266A /* libPods-SDInKe.a */,
 			);
 			name = Frameworks;
@@ -857,6 +887,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3PYAVNJVS7;
 				INFOPLIST_FILE = SDInKe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = slowdony.SDInKe;
@@ -872,6 +903,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3PYAVNJVS7;
 				INFOPLIST_FILE = SDInKe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = slowdony.SDInKe;
