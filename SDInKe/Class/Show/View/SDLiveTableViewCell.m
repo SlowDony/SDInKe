@@ -147,6 +147,7 @@
     if (cell == nil) {
         
         cell =[[SDLiveTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     
     return cell;

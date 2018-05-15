@@ -25,6 +25,7 @@
 - (void) didTapBackButton:(id)sender;
 
 - (void) setupTitle:(NSString *)title;
+
 - (void) rightButtonWithTitle:(NSString *)title action:(SEL) selector onTarget:(id) target;
 - (void) rightButtonWithImage:(UIImage *)image action:(SEL) selector onTarget:(id) target;
 - (void) rightButtonWithImage:(UIImage *)image hlImage:(UIImage *) hlImage action:(SEL) selector onTarget:(id) target;

@@ -9,6 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface UIBarButtonItem (Extension)
-+(UIBarButtonItem *)itemTarget:(id)target WithAction:(SEL)action andImage:(NSString *)image andSelectImage:(NSString *)selectImage;
-+(UIBarButtonItem *)itemWithaddTarget:(id)target Action:(SEL)action andTitle:(NSString *)title;
+
++(UIBarButtonItem *)itemTarget:(id)target
+                    WithAction:(SEL)action
+                      andImage:(NSString *)image
+                andSelectImage:(NSString *)selectImage;
+
++(UIBarButtonItem *)itemWithaddTarget:(id)target
+                               Action:(SEL)action
+                             andTitle:(NSString *)title;
 @end

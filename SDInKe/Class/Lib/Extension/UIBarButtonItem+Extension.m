@@ -24,8 +24,9 @@
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.frame = CGRectMake(0, 0, 30, 30);
     [btn setImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
+    btn.backgroundColor = [UIColor clearColor];
     [btn setImage:[UIImage imageNamed:selectImage] forState:UIControlStateHighlighted];
-    [btn setImageEdgeInsets:UIEdgeInsetsMake(0, 1, 0, 20)];
+//    [btn setImageEdgeInsets:UIEdgeInsetsMake(0, 1, 0, 20)];
     [btn  addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     return [[UIBarButtonItem alloc]initWithCustomView:btn];
 }

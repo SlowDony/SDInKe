@@ -7,7 +7,8 @@
 //
 
 #import "SDBaseViewController.h"
-
+#import "SDLiveModel.h"
 @interface SDPlayerViewController : SDBaseViewController
 
+@property (nonatomic,strong)  SDLiveModel *liveModel;
 @end

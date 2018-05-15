@@ -18,5 +18,7 @@
  @param size 尺寸
  @return 图片
  */
-+ (UIImage *)imageWithRoundCorner:(UIImage *)sourceImage cornerRadius:(CGFloat)cornerRadius size:(CGSize)size;
++ (UIImage *)imageWithRoundCorner:(UIImage *)sourceImage
+                     cornerRadius:(CGFloat)cornerRadius
+                             size:(CGSize)size;
 @end

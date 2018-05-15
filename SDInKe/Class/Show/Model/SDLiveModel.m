@@ -5,23 +5,39 @@
 
 
 #import "SDLiveModel.h"
-#import "SDHotLiveModel.h"
-#import "SDActInfoModel.h"
-#import "SDCreatorModel.h"
-#import "SDExtraModel.h"
 
+
+/// SDActInfoModel
+
+@implementation SDActInfoModel
+
+@end
+
+/// SDActInfoModel
+
+@implementation SDCreatorModel
+
+@end
+
+/// SDActInfoModel
+
+@implementation SDExtraModel
+
+@end
+/// SDHotLiveModel
+
+
+@implementation SDHotLiveModel
+
+@end
+
+
+/// SDLiveModel
 @interface SDLiveModel ()
+
+
 @end
 @implementation SDLiveModel
-
-
-
-
-
-
-/**
- * Instantiate the instance using the passed dictionary values to set the properties values
- */
 
 
 @end

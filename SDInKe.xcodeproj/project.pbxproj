@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A3EA10E1DAEC55E733A38E1F /* libPods-SDInKe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D7D98FB5541DEED608266A /* libPods-SDInKe.a */; };
+		EF0B3C0A2099F732006CA6AD /* UIImage+SDImage.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0B3C092099F732006CA6AD /* UIImage+SDImage.m */; };
+		EF0B3C12209A09DE006CA6AD /* SDPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0B3C11209A09DE006CA6AD /* SDPlayerViewController.m */; };
 		EF83DD9D1FFBD35F00B9FA0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF83DD9B1FFBD35F00B9FA0C /* Main.storyboard */; };
 		EF83DD9F1FFBD35F00B9FA0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF83DD9E1FFBD35F00B9FA0C /* Assets.xcassets */; };
 		EF83DDA21FFBD35F00B9FA0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF83DDA01FFBD35F00B9FA0C /* LaunchScreen.storyboard */; };
@@ -20,11 +22,7 @@
 		EFA964E42082435A00096E83 /* SDHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA964E32082435A00096E83 /* SDHttpTool.m */; };
 		EFA964E72082447600096E83 /* SDBaseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA964E62082447600096E83 /* SDBaseHandler.m */; };
 		EFA964EA2082482300096E83 /* SDHotLiveHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA964E92082482300096E83 /* SDHotLiveHandle.m */; };
-		EFA964ED208255A500096E83 /* SDHotLiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA964EC208255A500096E83 /* SDHotLiveModel.m */; };
 		EFA964F02082574700096E83 /* SDLiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA964EF2082574700096E83 /* SDLiveModel.m */; };
-		EFA964F32082576400096E83 /* SDActInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA964F12082576400096E83 /* SDActInfoModel.m */; };
-		EFA964F82082579900096E83 /* SDCreatorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA964F42082579900096E83 /* SDCreatorModel.m */; };
-		EFA964F92082579900096E83 /* SDExtraModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA964F72082579900096E83 /* SDExtraModel.m */; };
 		EFA964FC2083B43800096E83 /* MJExtensionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA964FB2083B43800096E83 /* MJExtensionConfig.m */; };
 		EFCAE5512020B38E00B69B98 /* SDLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCAE5502020B38E00B69B98 /* SDLiveViewController.m */; };
 		EFCAE5542020C7E200B69B98 /* SDFocusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCAE5532020C7E200B69B98 /* SDFocusViewController.m */; };
@@ -42,6 +40,7 @@
 		EFEAE23F2018E0E00030427A /* SDTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EFEAE23E2018E0E00030427A /* SDTabBar.m */; };
 		EFEAE24D2018F0F20030427A /* SDShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFEAE24C2018F0F20030427A /* SDShowViewController.m */; };
 		EFEAE2502018F1070030427A /* SDMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFEAE24F2018F1070030427A /* SDMeViewController.m */; };
+		EFEBE76B20A49E6700AA6156 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFEBE76A20A49E6700AA6156 /* IJKMediaFramework.framework */; };
 		EFEEF17B20863EC10015FB01 /* SDBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFEEF17A20863EC10015FB01 /* SDBaseTableViewCell.m */; };
 		EFEEF17E20863ED00015FB01 /* SDBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFEEF17D20863ED00015FB01 /* SDBaseTableView.m */; };
 		EFEEF18120863EFE0015FB01 /* SDLiveTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFEEF18020863EFE0015FB01 /* SDLiveTableView.m */; };
@@ -69,6 +68,10 @@
 		97F05CAF0A3863A2093418FE /* Pods-SDInKe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDInKe.release.xcconfig"; path = "Pods/Target Support Files/Pods-SDInKe/Pods-SDInKe.release.xcconfig"; sourceTree = "<group>"; };
 		A6D7D98FB5541DEED608266A /* libPods-SDInKe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SDInKe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C56E55065FCB540FD8FFD509 /* Pods-SDInKe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDInKe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SDInKe/Pods-SDInKe.debug.xcconfig"; sourceTree = "<group>"; };
+		EF0B3C082099F732006CA6AD /* UIImage+SDImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SDImage.h"; sourceTree = "<group>"; };
+		EF0B3C092099F732006CA6AD /* UIImage+SDImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SDImage.m"; sourceTree = "<group>"; };
+		EF0B3C10209A09DE006CA6AD /* SDPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDPlayerViewController.h; sourceTree = "<group>"; };
+		EF0B3C11209A09DE006CA6AD /* SDPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDPlayerViewController.m; sourceTree = "<group>"; };
 		EF3DE5652006485C00A52ACE /* SDInke.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDInke.pch; sourceTree = "<group>"; };
 		EF3DE566200648AC00A52ACE /* SDMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDMacros.h; sourceTree = "<group>"; };
 		EF83DD921FFBD35F00B9FA0C /* SDInKe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDInKe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,16 +97,8 @@
 		EFA964E62082447600096E83 /* SDBaseHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDBaseHandler.m; sourceTree = "<group>"; };
 		EFA964E82082482300096E83 /* SDHotLiveHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDHotLiveHandle.h; sourceTree = "<group>"; };
 		EFA964E92082482300096E83 /* SDHotLiveHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDHotLiveHandle.m; sourceTree = "<group>"; };
-		EFA964EB208255A500096E83 /* SDHotLiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDHotLiveModel.h; sourceTree = "<group>"; };
-		EFA964EC208255A500096E83 /* SDHotLiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDHotLiveModel.m; sourceTree = "<group>"; };
 		EFA964EE2082574700096E83 /* SDLiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLiveModel.h; sourceTree = "<group>"; };
 		EFA964EF2082574700096E83 /* SDLiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDLiveModel.m; sourceTree = "<group>"; };
-		EFA964F12082576400096E83 /* SDActInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDActInfoModel.m; sourceTree = "<group>"; };
-		EFA964F22082576400096E83 /* SDActInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDActInfoModel.h; sourceTree = "<group>"; };
-		EFA964F42082579900096E83 /* SDCreatorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCreatorModel.m; sourceTree = "<group>"; };
-		EFA964F52082579900096E83 /* SDExtraModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDExtraModel.h; sourceTree = "<group>"; };
-		EFA964F62082579900096E83 /* SDCreatorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCreatorModel.h; sourceTree = "<group>"; };
-		EFA964F72082579900096E83 /* SDExtraModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDExtraModel.m; sourceTree = "<group>"; };
 		EFA964FA2083B43800096E83 /* MJExtensionConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConfig.h; sourceTree = "<group>"; };
 		EFA964FB2083B43800096E83 /* MJExtensionConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConfig.m; sourceTree = "<group>"; };
 		EFCAE54F2020B38E00B69B98 /* SDLiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDLiveViewController.h; sourceTree = "<group>"; };
@@ -144,6 +139,7 @@
 		EFEAE24C2018F0F20030427A /* SDShowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDShowViewController.m; sourceTree = "<group>"; };
 		EFEAE24E2018F1070030427A /* SDMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDMeViewController.h; sourceTree = "<group>"; };
 		EFEAE24F2018F1070030427A /* SDMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDMeViewController.m; sourceTree = "<group>"; };
+		EFEBE76A20A49E6700AA6156 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		EFEEF17920863EC10015FB01 /* SDBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDBaseTableViewCell.h; sourceTree = "<group>"; };
 		EFEEF17A20863EC10015FB01 /* SDBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDBaseTableViewCell.m; sourceTree = "<group>"; };
 		EFEEF17C20863ED00015FB01 /* SDBaseTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDBaseTableView.h; sourceTree = "<group>"; };
@@ -162,6 +158,7 @@
 				EFCBBCD6208B236200257563 /* libbz2.tbd in Frameworks */,
 				EFCBBCD8208B236C00257563 /* libz.tbd in Frameworks */,
 				EFCBBCD0208B22BD00257563 /* AudioToolbox.framework in Frameworks */,
+				EFEBE76B20A49E6700AA6156 /* IJKMediaFramework.framework in Frameworks */,
 				A3EA10E1DAEC55E733A38E1F /* libPods-SDInKe.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,6 +207,14 @@
 				97F05CAF0A3863A2093418FE /* Pods-SDInKe.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		EF0B3C0B2099F7EA006CA6AD /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				EFEBE76A20A49E6700AA6156 /* IJKMediaFramework.framework */,
+			);
+			path = Framework;
 			sourceTree = "<group>";
 		};
 		EF83DD891FFBD35F00B9FA0C = {
@@ -313,6 +318,7 @@
 		EF83DDCA1FFBD49F00B9FA0C /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				EF0B3C0B2099F7EA006CA6AD /* Framework */,
 				EFCAE5612020CE2800B69B98 /* Extension */,
 			);
 			path = Lib;
@@ -409,6 +415,8 @@
 		EFCAE5612020CE2800B69B98 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				EF0B3C082099F732006CA6AD /* UIImage+SDImage.h */,
+				EF0B3C092099F732006CA6AD /* UIImage+SDImage.m */,
 				EFCAE5632020CE3400B69B98 /* UIBarButtonItem+Extension.h */,
 				EFCAE5622020CE3400B69B98 /* UIBarButtonItem+Extension.m */,
 			);
@@ -418,16 +426,8 @@
 		EFEAE2432018F0CC0030427A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EFA964F62082579900096E83 /* SDCreatorModel.h */,
-				EFA964F42082579900096E83 /* SDCreatorModel.m */,
-				EFA964F52082579900096E83 /* SDExtraModel.h */,
-				EFA964F72082579900096E83 /* SDExtraModel.m */,
-				EFA964F22082576400096E83 /* SDActInfoModel.h */,
-				EFA964F12082576400096E83 /* SDActInfoModel.m */,
 				EFA964EE2082574700096E83 /* SDLiveModel.h */,
 				EFA964EF2082574700096E83 /* SDLiveModel.m */,
-				EFA964EB208255A500096E83 /* SDHotLiveModel.h */,
-				EFA964EC208255A500096E83 /* SDHotLiveModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -443,6 +443,8 @@
 				EFCAE5562020C7FD00B69B98 /* SDHotViewController.m */,
 				EFCAE5582020C93B00B69B98 /* SDNearViewController.h */,
 				EFCAE5592020C93B00B69B98 /* SDNearViewController.m */,
+				EF0B3C10209A09DE006CA6AD /* SDPlayerViewController.h */,
+				EF0B3C11209A09DE006CA6AD /* SDPlayerViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -697,25 +699,23 @@
 				EFEAE23C2018E0C20030427A /* SDTabBarViewController.m in Sources */,
 				EF83DDDC1FFBD50800B9FA0C /* main.m in Sources */,
 				EFCAE55D2020CA4200B69B98 /* SDBaseNavigationController.m in Sources */,
+				EF0B3C0A2099F732006CA6AD /* UIImage+SDImage.m in Sources */,
 				EF83DDD61FFBD4A000B9FA0C /* AppDelegate.m in Sources */,
 				EFCAE5672020CF9600B69B98 /* SDHelper.m in Sources */,
 				EFA964E72082447600096E83 /* SDBaseHandler.m in Sources */,
 				EFA964F02082574700096E83 /* SDLiveModel.m in Sources */,
-				EFA964F82082579900096E83 /* SDCreatorModel.m in Sources */,
 				EFEEF17E20863ED00015FB01 /* SDBaseTableView.m in Sources */,
 				EFEAE23F2018E0E00030427A /* SDTabBar.m in Sources */,
 				EFCAE5542020C7E200B69B98 /* SDFocusViewController.m in Sources */,
 				EFEAE24D2018F0F20030427A /* SDShowViewController.m in Sources */,
-				EFA964F92082579900096E83 /* SDExtraModel.m in Sources */,
 				EFCAE5642020CE3400B69B98 /* UIBarButtonItem+Extension.m in Sources */,
 				EFA964E42082435A00096E83 /* SDHttpTool.m in Sources */,
 				EFCAE5512020B38E00B69B98 /* SDLiveViewController.m in Sources */,
 				EFCAE55A2020C93B00B69B98 /* SDNearViewController.m in Sources */,
+				EF0B3C12209A09DE006CA6AD /* SDPlayerViewController.m in Sources */,
 				EFCAE5602020CA6500B69B98 /* SDBaseViewController.m in Sources */,
 				EFCAE5572020C7FD00B69B98 /* SDHotViewController.m in Sources */,
 				EFCAE56D2020D1DD00B69B98 /* SDShowTopView.m in Sources */,
-				EFA964F32082576400096E83 /* SDActInfoModel.m in Sources */,
-				EFA964ED208255A500096E83 /* SDHotLiveModel.m in Sources */,
 				EFA964FC2083B43800096E83 /* MJExtensionConfig.m in Sources */,
 				EFEEF18420863F130015FB01 /* SDLiveTableViewCell.m in Sources */,
 				EFEEF18120863EFE0015FB01 /* SDLiveTableView.m in Sources */,
@@ -823,7 +823,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -873,7 +873,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -888,7 +888,12 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3PYAVNJVS7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SDInKe/Class/Lib/Framework",
+				);
 				INFOPLIST_FILE = SDInKe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = slowdony.SDInKe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -904,7 +909,12 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3PYAVNJVS7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SDInKe/Class/Lib/Framework",
+				);
 				INFOPLIST_FILE = SDInKe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = slowdony.SDInKe;
 				PRODUCT_NAME = "$(TARGET_NAME)";

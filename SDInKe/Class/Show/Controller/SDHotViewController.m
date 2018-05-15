@@ -10,8 +10,10 @@
 #import "SDHotLiveHandle.h"
 #import "SDLiveTableView.h"
 #import "SDLiveModel.h"
+#import "SDPlayerViewController.h"
 //热点
 @interface SDHotViewController ()
+<SDBaseTableViewDelegate>
 
 @property (nonatomic,strong)  SDLiveTableView *tableView;
 @property (nonatomic,strong) NSMutableArray *dataArr;
@@ -22,13 +24,15 @@
 #pragma mark - lazy
 -(SDLiveTableView *)tableView{
     if(!_tableView){
-        _tableView = [[SDLiveTableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _tableView = [[SDLiveTableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-kNavigationStatusBarHeight-kNavigationBarHeight) style:UITableViewStylePlain];
+        _tableView.baseDelegate = self;
     }
     return _tableView;
 }
 -(NSMutableArray *)dataArr{
     if(!_dataArr){
         _dataArr = [NSMutableArray array];
+        
     }
     return _dataArr;
 }
@@ -55,6 +59,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - SDBaseTableViewDelegate
+-(void)tableView:(id)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    SDPlayerViewController *playerVC = [[SDPlayerViewController alloc]init];
+    playerVC.hidesBottomBarWhenPushed = YES;
+    playerVC.liveModel = self.dataArr[indexPath.row];
+    [self.navigationController pushViewController:playerVC animated:YES];
+}
 /*
 #pragma mark - Navigation
 

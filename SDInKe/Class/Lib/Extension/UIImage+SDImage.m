@@ -18,7 +18,9 @@
  @param size 尺寸
  @return 图片
  */
-+ (UIImage *)imageWithRoundCorner:(UIImage *)sourceImage cornerRadius:(CGFloat)cornerRadius size:(CGSize)size{
++ (UIImage *)imageWithRoundCorner:(UIImage *)sourceImage
+                     cornerRadius:(CGFloat)cornerRadius
+                             size:(CGSize)size{
     CGFloat scale = [UIScreen mainScreen].scale;
     UIGraphicsBeginImageContextWithOptions(size, NO, scale);
     CGRect bounds = CGRectMake(0, 0, size.width, size.height);
@@ -31,6 +33,7 @@
     UIGraphicsEndImageContext();
     return image;
 }
+
 
 
 @end

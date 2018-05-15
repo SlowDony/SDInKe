@@ -8,7 +8,7 @@
 
 #import "SDBaseTableViewCell.h"
 #import "SDLiveModel.h"
-#import "SDCreatorModel.h"
+
 @interface SDHeadView :UIView
 ///头像
 @property (nonatomic,strong)  UIImageView *headImageView;
@@ -31,6 +31,7 @@
 @property (nonatomic,strong)  UILabel *stateLabel;
 
 @end
+
 
 @interface SDLiveTableViewCell : SDBaseTableViewCell
 ///头部view

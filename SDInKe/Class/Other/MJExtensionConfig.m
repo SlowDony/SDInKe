@@ -8,7 +8,7 @@
 
 #import "MJExtensionConfig.h"
 #import "MJExtension.h"
-#import "SDCreatorModel.h"
+
 #import "SDLiveModel.h"
 
 @implementation MJExtensionConfig
